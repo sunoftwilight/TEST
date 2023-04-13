@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            div{
+                border : 5px solid gray;
+            }
+
+            #grid{
+                border : 5px solid pink;
+                display: grid;
+                grid-template-columns: 150px 1fr; 
+                /*앞쪽의 요소가 150px의 공간을, 뒤의 요소가 나머지 공간을 모두 사용
+                만약 1fr 1fr로 적용하면 두 요소는 항상 같은 공간을,
+                2fr 1fr이면 각각 2/3와 1/3을 차지하게 됨*/
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div>NAVIGATION</div>
+            <div>ARTICLE</div>
+        </div>
+        
+    </body>
+</html>

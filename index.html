@@ -21,34 +21,74 @@
             h1 {
                 font-size : 45px;
                 text-align : center;
+                margin: 0;
+            }
+            
+            #title{
+                border-bottom : 2px solid rgb(57, 57, 57);
+                margin : 0px;
+                padding : 20px;
+            }
+
+            #index{ /*ol은 block element임*/
+                border-right: 2px solid rgb(57, 57, 57);
+                width : 180px;
+                margin : 0;
+            }
+
+            body{
+                margin : 0;
+            }
+
+            #grid{
+                display: grid;
+                grid-template-columns: 180px 1fr;
+                padding : 0;
+                border: 0;
+            }
+
+            #main{
+                padding-left : 30px;
             }
         </style>
     </head>
 
     <body>
-        <h1>♡ <a href="https://maple.gg/guild/elysium/%EB%B4%84%EC%9D%B4" target="_blank" title="엘리시움 '봄이' 길드">봄 이</a> ♡</h1>
-        <p style="text-align:center">안녕하세요,<Strong> <a style="color : deeppink;text-decoration: underline;">봄이</a> </Strong>길드입니다.</p>
-            <h2>INDEX</h2>
-        <ol>
-            <li><a href="1.html">길드 마스터</a></li>
-            <li><a href="2.html">길드 운영진</a></li>
-            <li><a href="3.html">길드원</a></li>
-            <li><a href="4.html">부캐</a></li>
-        </ol>
-        <!--
-        <h2>INDEX</h2>
-        <ol>
-            <li><a href="1.html">길드 마스터</a></li>
-            <li><a href="2.html">길드 운영진</a></li>
-            <li><a href="3.html">길드원</a></li>
-            <li><a href="4.html">부캐</a></li>
-        </ol>
-        -->
-        <br>
-        <img src="../web/봄이_고화질_이벤트-추가.png" width="500"> 
+        <div id="title">
+            <h1>♡ <a href="https://maple.gg/guild/elysium/%EB%B4%84%EC%9D%B4" target="_blank" title="엘리시움 '봄이' 길드">봄 이</a> ♡</h1>
+            <p style="text-align:center; margin-bottom:0;">안녕하세요,<Strong> <a style="color : deeppink;text-decoration: underline;">봄이</a> </Strong>길드입니다.</p>
+        </div>
 
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/QwQm84BHTNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-        
+        <div id="grid">
+
+            <div id="index" style="padding: 1px;">
+                <h2 style="margin:0; padding:10px;">INDEX</h2>
+                <ol>
+            
+                    <li><a href="1.html">길드 마스터</a></li>
+                    <li><a href="2.html">길드 운영진</a></li>
+                    <li><a href="3.html">길드원</a></li>
+                    <li><a href="4.html">부캐</a></li>
+                </ol>
+            </div>
+            <!--
+            <h2>INDEX</h2>
+            <ol>
+                <li><a href="1.html">길드 마스터</a></li>
+                <li><a href="2.html">길드 운영진</a></li>
+                <li><a href="3.html">길드원</a></li>
+             <li><a href="4.html">부캐</a></li>
+            </ol>
+            -->
+
+            <div id="main">
+                <br>
+                <img src="../web/봄이_고화질_이벤트-추가.png" width="500"> 
+
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/QwQm84BHTNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            </div>
+        </div>
+
         <div id="disqus_thread"></div>
         <script>
             /**

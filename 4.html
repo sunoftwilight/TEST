@@ -8,58 +8,40 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            tag('config', 'G-F7LN457EH6');
+            gtag('config', 'G-F7LN457EH6');
         </script>
         <title>BomE - Alternate</title>
         <meta charset="utf-8">
-        <style>
-            a {
-                color : rgb(255, 156, 185);
-                text-decoration: none;
-            }
-            
-            h1 {
-                font-size : 45px;
-                text-align : center;
-            }
-
-            .nope {
-                color: rgb(158, 158, 158);
-            }
-
-            .active {
-                color :rgb(250, 79, 130);
-                font-weight: 700;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <h1>♡ <a href="index.html">봄 이</a> ♡</h1>
-        <p style="text-align: center;">안녕하세요,<Strong> <a style="color : deeppink;text-decoration: underline;">봄이</a> </Strong>길드입니다.</p>
-            <h2>INDEX</h2>
-        <ol>
-            <li><a href="1.html" class="nope">길드 마스터</a></li>
-            <li><a href="2.html" class="nope">길드 운영진</a></li>
-            <li><a href="3.html" class="nope">길드원</a></li>
-            <li><a href="4.html" class="nope active">부캐릭터</a></li>
-        </ol>
-        
+        <div id="title">
+            <h1>♡ <a href="index.html" target="_blank" title="엘리시움 '봄이' 길드">봄 이</a> ♡</h1>
+            <p style="text-align:center; margin-bottom:0;">안녕하세요,<Strong> <a style="color : deeppink;text-decoration: underline;">봄이</a> </Strong>길드입니다.</p>
+        </div>
 
-        <p><h3>4. 부캐릭터</h3></p>
-        - 레앙츄 Lv.279<br>
-        <img src="../레앙츄.png" width="100px">
-        <div id="disqus_thread"></div>
+        <div id="grid">
+
+            <div id="index" style="padding: 1px;">
+                <h2 style="margin:0; padding:10px;">INDEX</h2>
+                <ol>
+            
+                    <li><a href="1.html">길드 마스터</a></li>
+                    <li><a href="2.html">길드 운영진</a></li>
+                    <li><a href="3.html">길드원</a></li>
+                    <li><a href="4.html" class="active">부캐릭터</a></li>
+                </ol>
+            </div>
+        
+            <div id="main">
+                <p><h3>4. 부캐릭터</h3></p>
+                - 레앙츄 Lv.279<br>
+                <img src="../레앙츄.png" width="100px">
+            </div>
+        </div>
+
         <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
             (function() { // DON'T EDIT BELOW THIS LINE
             var d = document, s = d.createElement('script');
             s.src = 'https://bome.disqus.com/embed.js';

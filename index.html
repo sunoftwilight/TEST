@@ -24,9 +24,10 @@
                 margin: 0;
             }
             
+            
             #title{
                 border-bottom : 2px solid rgb(57, 57, 57);
-                margin : 0px;
+                margin-top : 20px;
                 padding : 20px;
             }
 
@@ -49,7 +50,45 @@
 
             #main{
                 padding-left : 30px;
+                margin : 0 auto;
             }
+
+            #main p {
+                margin : 0 auto;
+                width : 640;
+                height: 360;               
+            }
+
+            #main div {
+                padding : 10px;
+            }
+            
+            @media(max-width : 600px) {
+                #grid{
+                    display: block;
+                }
+
+                #main p{
+                    margin : 0 auto;
+                    position : relative;
+                    width : 426px;
+                    height : 240px;
+                    padding-bottom : 56.25%;
+                }
+
+                #index{ /*ol은 block element임*/
+                    border-right: none;
+                    margin : 10px;
+                }
+
+                #title{
+                    border-bottom : none;
+                    margin : 20px;
+                    padding : 20px;
+                }
+            }
+
+
         </style>
     </head>
 
@@ -83,9 +122,12 @@
 
             <div id="main">
                 <br>
-                <img src="../web/봄이_고화질_이벤트-추가.png" width="500"> 
-
-                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/QwQm84BHTNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                <img src="../web/봄이_고화질_이벤트-추가.png" width="500">
+                <div>
+                    '봄이' 길드는 현재 노블 49P를 유지 중인 성인 매너길드입니다. 메이플스토리 엘리시움 서버에 2022년 8월 1일에 개설되었으며, 친목 및 스펙업을 목적으로 그리 많지 않은 인원임에도 불구하고 한분 한분 적극적으로 길드에 함께하고 계십니다.
+                    수로 주 1회 필수 참여 및 자유로운 플래그 참여를 지향하고 있습니다. 또한 길드 디스코드 및 카카오톡 오픈채팅으로 수다방을 활발히 운영중입니다. 
+                </div>
+                <p><iframe width="640" height="360" src="https://www.youtube.com/embed/QwQm84BHTNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
             </div>
         </div>
 

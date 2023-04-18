@@ -1,0 +1,66 @@
+a {
+    color : rgb(255, 156, 185);
+    text-decoration: none;
+}
+
+h1 {
+    font-size : 45px;
+    text-align : center;
+    margin: 0;
+}
+
+
+#title{
+    border-bottom : 2px solid rgb(57, 57, 57);
+    margin-top : 20px;
+    padding : 20px;
+}
+
+#index{ /*ol은 block element임*/
+    border-right: 2px solid rgb(57, 57, 57);
+    width : 180px;
+    margin : 0;
+}
+
+body{
+    margin : 0;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    padding : 0;
+    border: 0;
+}
+
+#main{
+    padding-left : 30px;
+    padding : 10px;
+    margin-left: 30px;
+}
+
+.active{
+    color :rgb(253, 62, 119);
+    font-weight: bolder;
+}
+
+@media(max-width : 600px) {
+    #grid{
+        display: block;
+    }
+
+    #main{
+        margin-bottom: 10px;
+    }
+
+    #index{ /*ol은 block element임*/
+        border-right: none;
+        margin : 10px;
+    }
+
+    #title{
+        border-bottom : none;
+        margin : 20px;
+        padding : 20px;
+    }
+}
